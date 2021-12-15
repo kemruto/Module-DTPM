@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_12sdp"
+    tools:context=".activities.InsertUserActivity">
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/background_input"
+        android:hint="Nhập họ tên"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="text"
+
+        android:layout_marginTop="@dimen/_16sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:hint="Nhập sđt"
+        android:imeOptions="actionNext"
+
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingStart="@dimen/_16sdp"
+
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp"
+
+        app:layout_constraintStart_toStartOf="@id/inputName"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:hint="Nhập email"
+        android:imeOptions="actionNext"
+
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/_16sdp"
+
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp"
+
+        app:layout_constraintStart_toStartOf="@id/inputPhone"
+        app:layout_constraintTop_toBottomOf="@id/inputPhone" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:hint="Nhập password"
+        android:imeOptions="actionNext"
+
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/_16sdp"
+
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp"
+
+        app:layout_constraintStart_toStartOf="@id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail" />
+
+    <EditText
+        android:id="@+id/inputStatus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:hint="Nhập loại TK"
+        android:imeOptions="actionDone"
+
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="@dimen/_16sdp"
+
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp"
+
+        app:layout_constraintStart_toStartOf="@id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonInsert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+
+        android:text="Insert"
+        app:cornerRadius="@dimen/_8sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        app:backgroundTint="@color/black"
+        android:layout_marginTop="@dimen/_16sdp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputStatus"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

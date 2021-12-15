@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_12sdp"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+
+        android:text="Nhập tài khoản mới"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/primary_text"
+
+        app:cornerRadius="@dimen/_8sdp"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonViewData"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+
+        android:text="Xem bảng tài khoản"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/primary_text"
+
+        app:cornerRadius="@dimen/_8sdp"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="@id/buttonInput"
+        app:layout_constraintTop_toBottomOf="@id/buttonInput"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
