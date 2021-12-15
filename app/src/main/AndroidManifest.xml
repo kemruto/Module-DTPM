@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Module_DTPM">
         <activity
+            android:name=".activities.ProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.ViewUserActivity"
             android:exported="false" />
         <activity

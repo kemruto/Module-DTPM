@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/drawable-v24/background_output_product.xml" value="0.20923076923076922" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/drawable/backgound_input.xml" value="0.20833333333333334" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/drawable/background_input.xml" value="0.20833333333333334" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/drawable/background_output.xml" value="0.20833333333333334" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/activity_insert_user.xml" value="0.16666666666666666" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/activity_product.xml" value="0.17592592592592593" />
+        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/activity_sign_in.xml" value="0.17592592592592593" />
         <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/activity_view_user.xml" value="0.1814814814814815" />
-        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/item_container_user.xml" value="0.1814814814814815" />
+        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/item_container_product.xml" value="0.17592592592592593" />
+        <entry key="..\:/WorkSpaceAndroid/Module_DTPM/app/src/main/res/layout/item_container_user.xml" value="0.22" />
       </map>
     </option>
   </component>

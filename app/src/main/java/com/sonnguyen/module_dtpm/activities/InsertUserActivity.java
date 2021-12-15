@@ -48,7 +48,6 @@ public class InsertUserActivity extends AppCompatActivity {
                         + name + " ',' " + phone + " ',' " + email + " ',' " + password + " ',' " + status + "')";
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(sqlInsert);
-                Toast.makeText(getApplicationContext(), "Insert success", Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
             Log.e("aaa", "insertData: " + e.getMessage());
