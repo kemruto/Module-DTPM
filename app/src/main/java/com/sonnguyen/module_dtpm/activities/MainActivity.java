@@ -23,8 +23,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, InsertUserActivity.class);
             startActivity(intent);
         });
-        binding.buttonViewData.setOnClickListener(v -> {
+        binding.buttonViewUser.setOnClickListener(v -> {
             Intent intent = new Intent(this, ViewUserActivity.class);
+            startActivity(intent);
+        });
+        binding.buttonViewProduct.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProductActivity.class);
             startActivity(intent);
         });
     }

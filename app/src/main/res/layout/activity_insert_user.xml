@@ -7,6 +7,20 @@
     android:padding="@dimen/_12sdp"
     tools:context=".activities.InsertUserActivity">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập thông tin user"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/inputName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <EditText
         android:id="@+id/inputName"
         android:layout_width="match_parent"
@@ -25,7 +39,7 @@
         android:textSize="@dimen/_13ssp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
     <EditText
         android:id="@+id/inputPhone"

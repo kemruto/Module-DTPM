@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.sonnguyen.module_dtpm.adapters.ProductAdapter;
 import com.sonnguyen.module_dtpm.adapters.UsersAdapter;
 import com.sonnguyen.module_dtpm.databinding.ActivityProductBinding;
 import com.sonnguyen.module_dtpm.helper.ConnectionHelper;
@@ -34,23 +35,21 @@ public class ProductActivity extends AppCompatActivity {
             ConnectionHelper connectionHelper = new ConnectionHelper();
             Connection connection = connectionHelper.connectionClass();
             if (connection != null) {
-                String sqlSelect = "Select * from TaiKhoan";
+                String sqlSelect = "Select * from SanPham";
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(sqlSelect);
-                List<User> userList = new ArrayList<>();
+                List<Product> productList = new ArrayList<>();
                 while (rs.next()) {
                     Product product = new Product();
-                    product.name = rs.getString(2);
-                    product.phone = rs.getString(3);
-                    product.email = rs.getString(4);
-                    product.role = rs.getString(6);
-                    Log.e("aaa", "user: " + user.name + "-" + user.phone + "-" + user.email + "-" + user.role);
-                    userList.add(user);
+                    product.nameProduct = rs.getString(2);
+                    product.image = rs.getString(3);
+                    product.price = rs.getString(7);
+                    productList.add(product);
                 }
-                if (userList.size() > 0) {
-                    UsersAdapter usersAdapter = new UsersAdapter(userList);
-                    binding.usersRecyclerView.setAdapter(usersAdapter);
-                    binding.usersRecyclerView.setVisibility(View.VISIBLE);
+                if (productList.size() > 0) {
+                    ProductAdapter productAdapter = new ProductAdapter(productList);
+                    binding.productsRecyclerView.setAdapter(productAdapter);
+                    binding.productsRecyclerView.setVisibility(View.VISIBLE);
                 }
             }
         } catch (Exception e) {

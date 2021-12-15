@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonViewData"
+        android:id="@+id/buttonViewUser"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
 
@@ -36,6 +36,21 @@
         app:backgroundTint="@color/gray"
         app:layout_constraintStart_toStartOf="@id/buttonInput"
         app:layout_constraintTop_toBottomOf="@id/buttonInput"/>
+
+  <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+
+        android:text="Xem sản phẩm"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/primary_text"
+
+        app:cornerRadius="@dimen/_8sdp"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintStart_toStartOf="@id/buttonViewUser"
+        app:layout_constraintTop_toBottomOf="@id/buttonViewUser"/>
 
 
 

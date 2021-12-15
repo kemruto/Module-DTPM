@@ -14,6 +14,7 @@ import java.util.List;
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersViewHolder> {
     private final List<User> users;
 
+
     public UsersAdapter(List<User> users) {
         this.users = users;
     }
@@ -47,7 +48,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.UsersViewHol
             binding = itemContainerUserBinding;
         }
 
-        void setUserData(User user){
+        void setUserData(User user) {
             binding.textName.setText(user.name);
             binding.textRole.setText(user.role);
             binding.textPhone.setText(user.phone);

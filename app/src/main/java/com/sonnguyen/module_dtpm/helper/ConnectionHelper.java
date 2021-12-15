@@ -8,14 +8,14 @@ import java.sql.DriverManager;
 
 public class ConnectionHelper {
     Connection conn;
-    String ip,port,username,password,databaseName;
+    String ip, port, username, password, databaseName;
 
-    public Connection connectionClass(){
+    public Connection connectionClass() {
         ip = "192.168.0.107";
         port = "49713";
         username = "son";
         password = "sonnguyen123";
-        databaseName = "test";
+        databaseName = "WATCH";
 
         StrictMode.ThreadPolicy tp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tp);

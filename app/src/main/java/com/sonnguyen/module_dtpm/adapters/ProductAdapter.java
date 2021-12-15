@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.sonnguyen.module_dtpm.R;
 import com.sonnguyen.module_dtpm.databinding.ItemContainerProductBinding;
-import com.sonnguyen.module_dtpm.databinding.ItemContainerUserBinding;
 import com.sonnguyen.module_dtpm.model.Product;
 
 import java.util.List;
@@ -51,15 +51,19 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.Products
             binding = itemContainerProductBinding;
         }
 
-        void setProductData(Product product){
-            binding.imageProduct.setImageBitmap(getProductImage(product.image));
-            binding.textNameProduct.setText(product.nameProdcut);
-            binding.textPrice.setText(product.donGia);
+        void setProductData(Product product) {
+            if(product.image!=null){
+                binding.imageProduct.setImageBitmap(getProductImage(product.image));
+            }else{
+                binding.imageProduct.setBackgroundResource(R.drawable.ic_hide_image);
+            }
+            binding.textNameProduct.setText(product.nameProduct);
+            binding.textPrice.setText(product.price);
         }
 
-        private Bitmap getProductImage(String encodedImage){
-            byte[] bytes = Base64.decode(encodedImage,Base64.DEFAULT);
-            return BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+        private Bitmap getProductImage(String encodedImage) {
+            byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
+            return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
         }
     }
 }

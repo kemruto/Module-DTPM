@@ -19,8 +19,6 @@ import java.util.List;
 
 public class ViewUserActivity extends AppCompatActivity {
     private ActivityViewUserBinding binding;
-    private Connection connection;
-    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +31,14 @@ public class ViewUserActivity extends AppCompatActivity {
     private void loadData() {
         try {
             ConnectionHelper connectionHelper = new ConnectionHelper();
-            connection = connectionHelper.connectionClass();
+            Connection connection = connectionHelper.connectionClass();
             if (connection != null) {
                 String sqlSelect = "Select * from TaiKhoan";
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(sqlSelect);
                 List<User> userList = new ArrayList<>();
                 while (rs.next()) {
-                    user = new User();
+                    User user = new User();
                     user.name = rs.getString(2);
                     user.phone = rs.getString(3);
                     user.email = rs.getString(4);
